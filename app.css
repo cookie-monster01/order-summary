@@ -1,0 +1,261 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-paleBlue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.hero {
+    display: grid;
+}
+
+.card {
+    place-self: center;
+    position: absolute;
+    /* top: 4.44em; */
+    top: calc(min(4.45em, 10.72vw) + 1.925em);
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.container {
+    max-width: 450px;
+    margin: 0 1.5em;
+}
+
+
+.card__content {
+    background: #fff;
+    padding: 2em 1.5em;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.card__img {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+.main__title {
+    text-align: center;
+    font-size: clamp(1.375rem, 1.24rem + .93vw, 1.75rem);
+    font-weight: 900;
+    line-height: normal;
+    color: var(--dark-blue);
+    margin: 0 0 .65em;
+}
+
+.card__description {
+    text-align: center;
+    color: var(--desaturated-blue);
+    font-size: clamp(.9375rem, .915rem + .106vw, 1rem);
+    font-weight: 500;
+    text-wrap: stable;
+    line-height: 1.625;
+    margin: 0 0 1.65em;
+    padding: 0 .5rem;
+}
+
+.bg__accent {
+    background: var(--very-paleBlue);
+    color: var(--desaturated-blue);
+    padding: 1em;
+    margin: 0 0 1.5em;
+    border-radius: 0.7rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.annual__plan {
+    margin-left: 1.5em;
+    font-size: clamp(.875rem, .8316rem + .19vw, 1rem);
+}
+
+.subtitle {
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin-bottom: .32em;
+}
+
+.bg__accent--clr {
+    font-size: clamp(.8125rem, .7899rem + .092vw, .875rem);
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+.bg__accent--clr:hover,
+.bg__accent--clr:focus-visible {
+    cursor: pointer;
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    background: var(--bright-blue);
+    padding: 1em 0;
+    border: none;
+    border-radius: 0.7rem;
+    margin: 0 0 1.56em;
+    filter: drop-shadow(0 .4em .4em rgba(56, 42, 225, .4));
+}
+
+.btn:hover,
+.btn:focus-visible {
+    cursor: pointer;
+    background: #766CF1;
+}
+
+.btn__item {
+    color: #fff;
+    text-decoration: none;
+    font-size: .9375rem;
+    font-weight: 700;
+}
+
+.link__item {
+    display: block;
+    font-size: .9375rem;
+    line-height: 1.34;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    text-align: center;
+}
+
+.link__item:hover,
+.link__item:focus {
+    cursor: pointer;
+    color: var(--dark-blue)
+}
+
+.attribution {
+    font-size: .6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media (min-width: 450px) {
+
+    .card__content {
+        padding: 2.75em 3em;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .container {
+        margin: 0;
+    }
+
+    .card__description {
+        margin: 0 0 1.8em;
+    }
+
+
+    .bg__accent {
+        padding: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .btn {
+        margin: 0 0 1.65em;
+    }
+
+}
