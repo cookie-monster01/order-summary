@@ -183,6 +183,10 @@ h1 {
 .btn {
     width: 100%;
     background: var(--bright-blue);
+    color: #fff;
+    text-decoration: none;
+    font-size: .9375rem;
+    font-weight: 700;
     padding: 1em 0;
     border: none;
     border-radius: 0.7rem;
@@ -196,12 +200,7 @@ h1 {
     background: #766CF1;
 }
 
-.btn__item {
-    color: #fff;
-    text-decoration: none;
-    font-size: .9375rem;
-    font-weight: 700;
-}
+
 
 .link__item {
     display: block;
