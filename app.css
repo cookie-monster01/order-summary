@@ -141,7 +141,7 @@ h1 {
     text-align: center;
     color: var(--desaturated-blue);
     font-size: clamp(.9375rem, .915rem + .106vw, 1rem);
-    font-weight: 700;
+    font-weight: 600;
     text-wrap: stable;
     line-height: 1.625;
     margin: 0 0 1.55em;
