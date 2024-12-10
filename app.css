@@ -112,7 +112,7 @@ h1 {
 .container {
     max-width: 450px;
     margin: 0 1.5em;
-    filter: drop-shadow(0 1em 1em rgba(56, 42, 225, .25));
+    filter: drop-shadow(0 1em 1.5em rgba(56, 42, 225, .15));
 }
 
 
