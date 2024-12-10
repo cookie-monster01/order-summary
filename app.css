@@ -145,7 +145,7 @@ h1 {
     text-wrap: stable;
     line-height: 1.625;
     margin: 0 0 1.55em;
-    /* padding: 0 .5rem; */
+    padding: 0 .5rem;
 }
 
 .bg__accent {
@@ -164,13 +164,13 @@ h1 {
 
 .annual__plan {
     margin-left: 1.5em;
-    font-size: clamp(.875rem, .83rem + .198vw, 1rem);
-    font-weight: 900;
+    font-size: clamp(.875rem, .83rem + .198vw, 1rem);    
 }
 
 .subtitle {
     color: var(--dark-blue);
     margin-bottom: .32em;
+    font-weight: 900;
 }
 
 .price {
