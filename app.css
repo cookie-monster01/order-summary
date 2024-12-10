@@ -94,7 +94,7 @@ h1 {
     display: grid;
 }
 
-.card__bg {
+.card__bg img {
     background-repeat: repeat-x;
 }
 
