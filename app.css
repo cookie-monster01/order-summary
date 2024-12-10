@@ -163,7 +163,7 @@ h1 {
 
 .annual__plan {
     margin-left: 1.5em;
-    font-size: clamp(.875rem, .8316rem + .19vw, 1rem);
+    font-size: clamp(.875rem, .83rem + .198vw, 1rem);
 }
 
 .subtitle {
