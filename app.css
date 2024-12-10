@@ -94,6 +94,10 @@ h1 {
     display: grid;
 }
 
+.card__bg {
+    background-repeat: repeat-x;
+}
+
 .card {
     place-self: center;
     position: absolute;
