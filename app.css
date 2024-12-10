@@ -95,6 +95,7 @@ h1 {
 }
 
 .card__bg img {
+    width: 100%;
     background-repeat: repeat-x;
 }
 
